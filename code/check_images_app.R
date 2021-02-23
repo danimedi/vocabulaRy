@@ -35,8 +35,8 @@ server <- function(input, output, session) {
   
   # fill the list with the image shown in the screen at that moment
   observeEvent(input$button_bad, {
-    bad_imgs[[i()]] <<- imgs[i()]
-    print(imgs[i()])
+    bad_imgs[[i()]] <<- dat$image[i()]
+    print(dat$image[i()])
   })
   
   # write the results in a file
@@ -44,6 +44,7 @@ server <- function(input, output, session) {
     bad_imgs <- unlist(bad_imgs)
     bad_imgs <- bad_imgs[!is.na(bad_imgs)]
     writeLines(bad_imgs, here("data/bad_images.txt"))
+    print("Done! :)")
   })
   
 }
