@@ -14,10 +14,13 @@ ui <- fluidPage(
   actionButton("button_good", "Next!"),
   actionButton("button_bad", "Bad image :("),
   HTML("<br>"),
-  actionButton("button_back", "Back")
+  actionButton("button_back", "Back"),
+  HTML("<br>"),
+  actionButton("button_end", "Finish and write the list")
 )
 
 server <- function(input, output, session) {
+  
   # reactive element as a counter, it counts both buttons
   i <- reactive(input$button_good + input$button_bad - input$button_back)
   
@@ -34,6 +37,14 @@ server <- function(input, output, session) {
     bad_imgs[[i()]] <<- imgs[i()]
     print(imgs[i()])
   })
+  
+  # write the results in a file
+  observeEvent(input$button_end, {
+    bad_imgs <- unlist(bad_imgs)
+    bad_imgs <- bad_imgs[!is.na(bad_imgs)]
+    writeLines(bad_imgs, "data/temporary/bad_images.txt")
+  })
+  
 }
 
 shinyApp(ui, server)
