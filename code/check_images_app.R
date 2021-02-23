@@ -1,10 +1,11 @@
 library(shiny)
 library(here)
+library(readr)
 
 # obtain list of all the words (from the data set)
-words <- readLines(here("data/clean/renamed_duplicates.txt"))
-# obtain the paths for all the images (to render the images of the app)
-imgs <- list.files(here("data/media/"), full.names = TRUE)
+dat <- read_csv2(here("data/data_set.csv"))
+# obtain the image paths from the data set
+imgs <- here("data/media", dat$image)
 # create empty list to add bad images
 bad_imgs <- vector("list", length(imgs))
 
@@ -25,7 +26,7 @@ server <- function(input, output, session) {
   i <- reactive(input$button_good + input$button_bad - input$button_back)
   
   # render text
-  output$word <- renderText(words[i() + 1])
+  output$word <- renderText(dat$word[i() + 1])
   
   # render image
   output$image <- renderImage({
@@ -42,7 +43,7 @@ server <- function(input, output, session) {
   observeEvent(input$button_end, {
     bad_imgs <- unlist(bad_imgs)
     bad_imgs <- bad_imgs[!is.na(bad_imgs)]
-    writeLines(bad_imgs, "data/temporary/bad_images.txt")
+    writeLines(bad_imgs, here("data/bad_images.txt"))
   })
   
 }
