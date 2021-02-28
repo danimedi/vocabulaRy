@@ -1,6 +1,5 @@
 word;image;image_html;english;spanish;portuguese
 actor;vocab-actor.jpg;"<img src=""vocab-actor.jpg"">";actor;actor;ator
-adjective;vocab-adjective.jpg;"<img src=""vocab-adjective.jpg"">";adjective;adjetivo;adjetivo
 adult;vocab-adult.jpg;"<img src=""vocab-adult.jpg"">";adult;adulto;adulto
 afternoon;vocab-afternoon.jpg;"<img src=""vocab-afternoon.jpg"">";afternoon;tarde;tarde
 air;vocab-air.jpg;"<img src=""vocab-air.jpg"">";air;aire;ar
@@ -560,7 +559,6 @@ ugly;vocab-ugly.jpg;"<img src=""vocab-ugly.jpg"">";ugly;feo;feio
 university;vocab-university.jpg;"<img src=""vocab-university.jpg"">";university;Universidad;universidade
 up;vocab-up.jpg;"<img src=""vocab-up.jpg"">";up;arriba;acima
 valley;vocab-valley.jpg;"<img src=""vocab-valley.jpg"">";valley;Valle;vale
-verb;vocab-verb.jpg;"<img src=""vocab-verb.jpg"">";verb;verbo;verbo
 victim;vocab-victim.jpg;"<img src=""vocab-victim.jpg"">";victim;víctima;vítima
 voice;vocab-voice.jpg;"<img src=""vocab-voice.jpg"">";voice;voz;voz
 vowel;vocab-vowel.jpg;"<img src=""vocab-vowel.jpg"">";vowel;vocal;vogal

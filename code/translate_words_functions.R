@@ -2,6 +2,13 @@ library(here)
 library(readr)
 library(rvest)
 
+# other functions ------------------------------
+
+sleep_fun <- function() Sys.sleep(abs(rnorm(1, 4.5, 1)))
+
+
+# functions for translation --------------------
+
 english_to_spanish <- function(words) {
   res <- vector("list", length(words))
   k <- 1
@@ -14,7 +21,7 @@ english_to_spanish <- function(words) {
     word2 <- web2 %>% html_node("dd a") %>% html_text() %>% tolower()
     res[[k]] <- c(word1, word2)
     k <- k + 1
-    Sys.sleep(abs(rnorm(1, 4.5, 1)))
+    sleep_fun()
   }
   return(res)
 }
