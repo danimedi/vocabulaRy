@@ -30,6 +30,13 @@ incorporate_input <- function(
   imgs_input <- list.files(here::here(media_input))
   imgs_output <- list.files(here::here(media_final))
   
+  # check that every image is referenced in the input data set and vice versa
+  if (!all(imgs_input %in% input$image)) {
+    "There are some input images that are not referenced in the input data set"
+  } else if (!all(input$image %in% imgs_input)) {
+    "The input data set references some non-existing images"
+  }
+  
   # check for repeated words
   if (any(input$word %in% final$word)) {
     paste(
