@@ -14,9 +14,9 @@
 #' @examples
 
 check_input <- function(
-  input_dat = "input/data_set.csv", 
-  final_dat = "data/data_set.csv",
-  image_folder = "input/media"
+  input_dat, 
+  final_dat,
+  image_folder
 ) {
   input <- suppressMessages(readr::read_csv2(here::here(input_dat)))
   final <- suppressMessages(readr::read_csv2(here::here(final_dat)))

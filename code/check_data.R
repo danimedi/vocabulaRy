@@ -10,7 +10,7 @@
 #'
 #' @examples
 
-check_data <- function(data_set = "data/data_set.csv", image_folder = "data/media") {
+check_data <- function(data_set, image_folder) {
   dat <- suppressMessages(readr::read_csv2(here::here(data_set)))
   imgs <- list.files(here::here(image_folder))
   list(
