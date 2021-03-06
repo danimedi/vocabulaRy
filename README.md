@@ -6,3 +6,6 @@ This repo contains the information to create Anki decks for vocabulary in differ
 - Add more numbers to the vocabulary (e.g. 21, )
 - Improve the vocabulary for pronouns (extend it to include the pronouns for spanish, portuguese and/or french)
 
+## Future
+
+- Check the list of most common words (English or Spanish) to add some useful words to complete 600-700 words
