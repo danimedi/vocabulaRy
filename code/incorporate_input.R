@@ -17,11 +17,11 @@
 #' @examples
 
 incorporate_input <- function(
-  data_set_input = "input/data_set.csv", 
-  media_input = "input/media", 
-  data_set_final = "data/data_set.csv", 
-  media_final = "data/media",
-  backup_folder = "data/backups",
+  data_set_input, 
+  media_input, 
+  data_set_final, 
+  media_final,
+  backup_folder
 ) {
   
   # read all the folders and files
