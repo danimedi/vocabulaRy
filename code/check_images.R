@@ -10,12 +10,12 @@
 #'
 #' @examples
 
-check_data <- function(data_set, image_folder) {
+check_images <- function(data_set, image_folder) {
   dat <- suppressMessages(readr::read_csv2(here::here(data_set)))
   imgs <- list.files(here::here(image_folder))
   list(
     image_cols = all(paste0("<img src=\"", dat$image, "\">") == dat$image_html),
     n_images = length(dat$image) == length(imgs),
-    names_images = all(dat$image == imgs)
+    names_images = all(dat$image %in% imgs)
   )
 }
