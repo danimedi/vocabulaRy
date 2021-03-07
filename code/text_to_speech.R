@@ -6,9 +6,8 @@
 #' @param words string or vector of strings
 #' @param voice voice for generating audio files, check https://soundoftext.com/docs#voices
 #' @param folder_path path of the folder that will contain the MP3 files of the words
+#' @param language language of the words (used for naming the columns)
 #' @param sleep_time time to sleep between downloading each word
-#' @param prefix prefix to be included in the name of the audio file to recognize the language
-#' in the data set
 #'
 #' @return
 #' @export
@@ -20,15 +19,15 @@ text_to_speech <- function(
   words, 
   voice,
   folder_path,
-  prefix,
+  language,
   sleep_time = 2
 ) {
   # API web page
   API <- "https://api.soundoftext.com/"
   # loop to obtain the audios and download them
   for (word in words) {
-    # create the name of the file using the prefix
-    file_name <- paste0(prefix, word, ".mp3")
+    # create the name of the file using the language
+    file_name <- paste0("vocab-", language, "-", word, ".mp3")
     if (!file_name %in% list.files(here::here(folder_path))) {
       try({
         # sleep
