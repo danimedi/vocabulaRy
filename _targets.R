@@ -1,6 +1,7 @@
 # library(targets)
 # 
-# tar_option_set(packages = "readr", "here", "dplyr", "httr", "rvest", "stringr", "tibble)
+# tar_option_set(packages = "readr", "here", "dplyr", "httr", "rvest", 
+# "stringr", "tibble", "rjson", "urltools")
 # 
 # sapply(list.files("code", full.names = TRUE, pattern = "[.]R$"), source)
 # 

@@ -13,9 +13,9 @@
 #' @export
 #'
 #' @examples
-#' text_to_speech(c("hello", "world"), "en-US", "data/audios", "vocab-french-")
+#' tts_sound_of_text(c("hello", "world"), "en-US", "data/audios", "vocab-french-")
 
-text_to_speech <- function(
+tts_sound_of_text <- function(
   words, 
   voice,
   folder_path,
