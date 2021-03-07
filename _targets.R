@@ -21,8 +21,8 @@ check_data(data_set = "data/data_set.csv", image_folder = "data/media/images")
 text_to_speech()
 # check that the all the files are downloaded and referenced in the data set
 check_audios()
-# generate mini data set to be included in the main data set with the names
-# of the audio files
+# generate mini data set to be included in the main data set
+create_image_columns()
 create_audio_columns()
 
 
