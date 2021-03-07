@@ -20,7 +20,7 @@ check_data(data_set = "data/data_set.csv", image_folder = "data/media/images")
 # download audio files from the words
 text_to_speech()
 # check that the all the files are downloaded and referenced in the data set
-check_downloaded_audios()
+check_audios()
 # generate mini data set to be included in the main data set with the names
 # of the audio files
 create_audio_columns()
@@ -29,4 +29,5 @@ create_audio_columns()
 # check and incorporate new data ------------------------------------------
 
 check_new_data()
+check_audios() # if there are audios
 # incorporate_new_data() # be careful, commit before using!

@@ -8,8 +8,8 @@
 #' @param final_data_set destination data set, with the complete information of the words
 #' @param backup_folder path to the backup folder that will contain a copy of the complete
 #' CSV file, before the replacement
-#' @param new_media media folder containing the images of the new words
-#' @param final_media destination folder for the images
+#' @param new_media folder containing the media of the new words
+#' @param final_media destination folder for the media
 #'
 #' @return
 #' @export
@@ -24,25 +24,22 @@ incorporate_new_data <- function(
   final_media
 ) {
   
-  # read all the folders and files
+  # read data sets
   input <- readr::read_csv2(here::here(new_data_set))
   final <- readr::read_csv2(here::here(final_data_set))
-  imgs_input <- list.files(here::here(new_media))
-  imgs_output <- list.files(here::here(final_media))
   
-  # check that every image is referenced in the input data set and vice versa
-  if (!all(imgs_input %in% input$image)) {
-    "There are some input images that are not referenced in the input data set"
-  } else if (!all(input$image %in% imgs_input)) {
-    "The input data set references some non-existing images"
+  # check that the files system is the same
+  if (!all(list.dirs(here::here(new_media), full.names = FALSE) == 
+          list.dirs(here::here(final_media), full.names = FALSE))) {
+    return("There is a problem in the file system: diferent folders in the new data")
   }
   
   # check for repeated words
   if (any(input$word %in% final$word)) {
-    paste(
+    return(paste(
       "Repeated words:", 
       paste(input$word[input$word %in% final$word], collapse = " ")
-    )
+    ))
   }
   
   # check the number of rows and names of the columns, bind them, and organize them
@@ -50,7 +47,7 @@ incorporate_new_data <- function(
     res_dat <- dplyr::bind_rows(input, final)
     res_dat <- dplyr::arrange(res_dat, image)
   } else {
-    "There is a problem between the columns of the input and final data sets"
+    return("There is a problem between the columns of the input and final data sets")
   }
   
   # finally, create a backup,
@@ -62,10 +59,10 @@ incorporate_new_data <- function(
   readr::write_excel_csv2(res_dat, here::here(final_data_set))
   # empty the previous data set,
   readr::write_excel_csv2(res_dat[FALSE, ], here::here(new_data_set))
-  # and move the images
-  file.copy(list.files(here::here(new_media), full.names = TRUE), 
-            here::here(final_media),
-            overwrite = TRUE)
-  file.remove(list.files(here::here(new_media), full.names = TRUE))
+  # and move the media files
+  file.rename(
+    from = list.files(here::here(new_media), recursive = TRUE, full.names = TRUE),
+    to = paste0(final_media, "/", list.files(here::here(new_media), recursive = TRUE))
+  )
   
 }

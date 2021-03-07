@@ -9,7 +9,7 @@
 #'
 #' @examples
 
-check_downloaded_audios <- function(words, audio_folder) {
+check_audios <- function(words, audio_folder) {
   audios <- list.files(here::here(audio_folder), pattern = "[.]mp3$")
   words <- paste0(words, ".mp3")
   list(
