@@ -21,7 +21,8 @@ text_to_speech()
 check_downloaded_audios()
 
 
-# check and incorporate input ---------------------------------------------
 
-check_input()
-incorporate_input() # be careful!
+# check and incorporate new data ------------------------------------------
+
+check_new_data()
+# incorporate_new_data() # be careful!

@@ -1,34 +1,34 @@
-#' Transfer the information from the input folder to the main data set and media
+#' Transfer the information from the new data folder to the main data set and media
 #' 
-#' This will update the main `data` file to contain the information stored in the input folder, 
+#' This will update the main `data` file to contain the information stored in the new data folder, 
 #' this is *will change different things* (e.g. moving images, replacing files, emptying files, 
 #' etc.) so **be careful**. Preferably, **commit before running the function**.
 #'
-#' @param data_set_input data set of the input folder containing the new words
-#' @param media_input media folder containing the images of the new words
-#' @param data_set_final destination data set, with the complete information of the words
-#' @param media_final destination folder for the images
+#' @param new_data_set data set containing the new words
+#' @param final_data_set destination data set, with the complete information of the words
 #' @param backup_folder path to the backup folder that will contain a copy of the complete
 #' CSV file, before the replacement
+#' @param new_media media folder containing the images of the new words
+#' @param final_media destination folder for the images
 #'
 #' @return
 #' @export
 #'
 #' @examples
 
-incorporate_input <- function(
-  data_set_input, 
-  media_input, 
-  data_set_final, 
-  media_final,
-  backup_folder
+incorporate_new_data <- function(
+  new_data_set,
+  final_data_set,
+  backup_folder,
+  new_media,
+  final_media
 ) {
   
   # read all the folders and files
-  input <- readr::read_csv2(here::here(data_set_input))
-  final <- readr::read_csv2(here::here(data_set_final))
-  imgs_input <- list.files(here::here(media_input))
-  imgs_output <- list.files(here::here(media_final))
+  input <- readr::read_csv2(here::here(new_data_set))
+  final <- readr::read_csv2(here::here(final_data_set))
+  imgs_input <- list.files(here::here(new_media))
+  imgs_output <- list.files(here::here(final_media))
   
   # check that every image is referenced in the input data set and vice versa
   if (!all(imgs_input %in% input$image)) {
@@ -55,17 +55,17 @@ incorporate_input <- function(
   
   # finally, create a backup,
   file.rename(
-    here::here(data_set_final), 
+    here::here(final_data_set), 
     here::here(backup_folder, paste0(Sys.Date(), ".csv"))
   )
   # replace the final data set,
-  readr::write_excel_csv2(res_dat, here::here(data_set_final))
+  readr::write_excel_csv2(res_dat, here::here(final_data_set))
   # empty the previous data set,
-  readr::write_excel_csv2(res_dat[FALSE, ], here::here(data_set_input))
+  readr::write_excel_csv2(res_dat[FALSE, ], here::here(new_data_set))
   # and move the images
-  file.copy(list.files(here::here(media_input), full.names = TRUE), 
-            here::here(media_final),
+  file.copy(list.files(here::here(new_media), full.names = TRUE), 
+            here::here(final_media),
             overwrite = TRUE)
-  file.remove(list.files(here::here(media_input), full.names = TRUE))
+  file.remove(list.files(here::here(new_media), full.names = TRUE))
   
 }

@@ -13,7 +13,7 @@
 #'
 #' @examples
 
-check_input <- function(
+check_new_data <- function(
   input_dat, 
   final_dat,
   image_folder
