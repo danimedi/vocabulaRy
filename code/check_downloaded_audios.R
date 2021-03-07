@@ -3,7 +3,7 @@
 #' @param words vector of strings containing the words
 #' @param audio_folder folder containing the audio files
 #'
-#' @return A list with 2 elemnts indicating the problems, if any, between the data set and
+#' @return A list with 2 elements indicating the problems, if any, between the data set and
 #' the audio files.
 #' @export
 #'

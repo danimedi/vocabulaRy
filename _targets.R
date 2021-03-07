@@ -26,8 +26,7 @@ check_downloaded_audios()
 create_audio_columns()
 
 
-
 # check and incorporate new data ------------------------------------------
 
 check_new_data()
-# incorporate_new_data() # be careful!
+# incorporate_new_data() # be careful, commit before using!
