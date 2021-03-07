@@ -43,7 +43,7 @@ incorporate_new_data <- function(
   }
   
   # check the number of rows and names of the columns, bind them, and organize them
-  if ((nrow(input) == nrow(final)) & all(names(input) == names(final))) {
+  if ((ncol(input) == ncol(final)) & all(names(input) == names(final))) {
     res_dat <- dplyr::bind_rows(input, final)
     res_dat <- dplyr::arrange(res_dat, image)
   } else {
