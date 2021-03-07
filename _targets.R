@@ -28,6 +28,8 @@ create_audio_columns()
 
 # check and incorporate new data ------------------------------------------
 
+# update the data set and the directory system in the new data
+update_new_data()
 check_new_data()
 check_audios() # if there are audios
 # incorporate_new_data() # be careful, commit before using!
