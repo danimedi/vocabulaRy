@@ -1,6 +1,6 @@
 #' Check the audio files from a list of words
 #'
-#' @param words vector of strings containing the words
+#' @param words vector of strings containing the audio names in the data set
 #' @param audio_folder folder containing the audio files
 #'
 #' @return A list with 2 elements indicating the problems, if any, between the data set and
@@ -9,11 +9,10 @@
 #'
 #' @examples
 
-check_audios <- function(words, audio_folder) {
+check_audios <- function(audio_names, audio_folder) {
   audios <- list.files(here::here(audio_folder), pattern = "[.]mp3$")
-  words <- paste0(words, ".mp3")
   list(
-    words_without_audios = words[!words %in% audios],
-    audios_without_words = audios[!audios %in% words]
+    words_without_audios = audio_names[!audio_names %in% audios],
+    audios_without_words = audios[!audios %in% audio_names]
   )
 }
