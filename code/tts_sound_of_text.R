@@ -5,8 +5,8 @@
 #'
 #' @param words string or vector of strings
 #' @param voice voice for generating audio files, check https://soundoftext.com/docs#voices
-#' @param folder_path path of the folder that will contain the MP3 files of the words
 #' @param language language of the words (used for naming the columns)
+#' @param folder_path path of the folder that will contain the MP3 files of the words
 #' @param sleep_time time to sleep between downloading each word
 #'
 #' @return
@@ -18,8 +18,8 @@
 tts_sound_of_text <- function(
   words, 
   voice,
-  folder_path,
   language,
+  folder_path,
   sleep_time = 2
 ) {
   # API web page
