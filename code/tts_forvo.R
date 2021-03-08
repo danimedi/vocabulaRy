@@ -5,7 +5,9 @@
 #' if you don't want to use an optional argument leave it empty (`""`).
 #'
 #' @param words vector of strings with the words to download as audios
-#' @param language language of the audios, you can use the English name, e.g. `"french"`
+#' @param language_code language code of the audios, check https://forvo.com/languages-codes/
+#' @param language name of the language, used to generate the names of the audio files, 
+#' e.g. "french"
 #' @param output_dir directory where the audios will be saved
 #' @param sex 
 #' @param country 
@@ -22,10 +24,11 @@
 #' @export
 #'
 #' @examples
-#' tts_forvo("bonjour", "french", "C:/Users/NAPO/Downloads")
+#' tts_forvo("bonjour", "fr", "french", "C:/Users/NAPO/Downloads")
 #' 
 tts_forvo <- function(
   words,
+  language_code,
   language,
   output_dir,
   sex = "m",
@@ -57,7 +60,7 @@ tts_forvo <- function(
           "action" = action,
           "format" = format,
           "word" = word,
-          "language" = language,
+          "language" = language_code,
           "country" = country,
           "order" = order,
           "group-in-languages" = group_in_languages,
