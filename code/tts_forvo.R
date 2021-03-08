@@ -57,8 +57,8 @@ tts_forvo <- function(
         # create a list with the arguments/parameters
         req <- list(
           "key" = key,
-          "action" = action,
           "format" = format,
+          "action" = action,
           "word" = word,
           "language" = language_code,
           "country" = country,
