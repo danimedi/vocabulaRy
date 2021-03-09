@@ -22,5 +22,3 @@ generate_output <- function(in_dat, out_dat, language) {
   dat <- dplyr::rename(dat, first_field = word)
   readr::write_excel_csv2(dat, out_dat)
 }
-
-generate_output("data/data_set.csv", "data/output/french.csv", "french")
