@@ -9,7 +9,7 @@
 #' @param language name of the language, used to generate the names of the audio files, 
 #' e.g. "french"
 #' @param output_dir directory where the audios will be saved
-#' @param sex 
+#' @param sex "m" for male, "f" for female
 #' @param country 
 #' @param order 
 #' @param group_in_languages 
@@ -31,7 +31,7 @@ tts_forvo <- function(
   language_code,
   language,
   output_dir,
-  sex = "m",
+  sex = "",
   country = "",
   order = "rate-desc",
   group_in_languages = "false",
@@ -61,6 +61,7 @@ tts_forvo <- function(
           "action" = action,
           "word" = word,
           "language" = language_code,
+          "sex" = sex,
           "country" = country,
           "order" = order,
           "group-in-languages" = group_in_languages,
