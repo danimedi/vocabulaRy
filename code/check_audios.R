@@ -1,7 +1,8 @@
 #' Check the audio files from a list of words
 #'
-#' @param words vector of strings containing the audio names in the data set
-#' @param audio_folder folder containing the audio files
+#' @param data data set with the data
+#' @param language 
+#' @param audio_dir path to the directory of the audio files
 #'
 #' @return A list with 2 elements indicating the problems, if any, between the data set and
 #' the audio files.
