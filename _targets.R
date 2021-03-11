@@ -13,7 +13,7 @@ sapply(list.files("code", full.names = TRUE, pattern = "[.]R$"), source)
 
 # check data --------------------------------------------------------------
 
-check_data(data_set = "data/data_set.csv", image_folder = "data/media/images")
+check_images(data_set = "data/data_set.csv", image_folder = "data/media/images")
 
 
 # download and check audios -----------------------------------------------
