@@ -4,12 +4,12 @@
 #' this is *will change different things* (e.g. moving images, replacing files, emptying files, 
 #' etc.) so **be careful**. Preferably, **commit before running the function**.
 #'
-#' @param new_data_set data set containing the new words
-#' @param final_data_set destination data set, with the complete information of the words
+#' @param new_data_set path to the data set containing the new words
+#' @param final_data_set path of the destination data set, with the complete information of the words
 #' @param backup_folder path to the backup folder that will contain a copy of the complete
 #' CSV file, before the replacement
-#' @param new_media folder containing the media of the new words
-#' @param final_media destination folder for the media
+#' @param new_media path to the folder containing the media of the new words
+#' @param final_media path of the destination folder for the media
 #'
 #' @return
 #' @export
