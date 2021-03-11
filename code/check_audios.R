@@ -9,10 +9,16 @@
 #'
 #' @examples
 
-check_audios <- function(audio_names, audio_folder) {
-  audios <- list.files(here::here(audio_folder), pattern = "[.]mp3$")
+check_audios <- function(data, language, audio_dir) {
+  # select the audio columns for the language
+  name_cols <- c(paste0(language, "_audio"), paste0(language, "_audio_html"))
+  dat <- dplyr::select(data, tidyselect::all_of(name_cols))
+  # obtain the names of the downloaded audio files
+  audios <- list.files(here::here(audio_dir), pattern = "[.]mp3$")
+  # create a list of the results
   list(
-    words_without_audios = audio_names[!audio_names %in% audios],
-    audios_without_words = audios[!audios %in% audio_names]
+    names_that_do_not_coincide = dat[!dat[[2]] == paste0("[sound:", dat[[1]], "]"), ],
+    words_without_audios = dat[[1]][!dat[[1]] %in% audios],
+    audios_without_words = audios[!audios %in% dat[[1]]]
   )
 }
