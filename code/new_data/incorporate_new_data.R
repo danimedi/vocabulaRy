@@ -4,12 +4,11 @@
 #' this is *will change different things* (e.g. moving images, replacing files, emptying files, 
 #' etc.) so **be careful**. Preferably, **commit before running the function**.
 #'
-#' @param new_data_set path to the data set containing the new words
-#' @param final_data_set path of the destination data set, with the complete information of the words
-#' @param backup_folder path to the backup folder that will contain a copy of the complete
-#' CSV file, before the replacement
-#' @param new_media path to the folder containing the media of the new words
-#' @param final_media path of the destination folder for the media
+#' @param new_data_dir 
+#' @param main_data_set_path 
+#' @param main_image_dir 
+#' @param backup_dir 
+#' @param new_data_set_path 
 #'
 #' @return
 #' @export
@@ -17,22 +16,16 @@
 #' @examples
 
 incorporate_new_data <- function(
-  new_data_set,
-  final_data_set,
-  backup_folder,
-  new_media,
-  final_media
+  new_data_dir,
+  main_data_set_path,
+  main_image_dir,
+  backup_dir,
+  new_data_set_path = file.path(new_data_dir, "data_set.csv")
 ) {
   
   # read data sets
-  input <- readr::read_csv2(here::here(new_data_set))
-  final <- readr::read_csv2(here::here(final_data_set))
-  
-  # check that the files system is the same
-  if (!all(list.dirs(here::here(new_media), full.names = FALSE) == 
-          list.dirs(here::here(final_media), full.names = FALSE))) {
-    return("There is a problem in the file system: diferent folders in the new data")
-  }
+  input <- readr::read_csv2(file.path(new_data_set_path))
+  final <- readr::read_csv2(main_data_set_path)
   
   # check for repeated words
   if (any(input$word %in% final$word)) {
@@ -52,17 +45,18 @@ incorporate_new_data <- function(
   
   # finally, create a backup,
   file.rename(
-    here::here(final_data_set), 
-    here::here(backup_folder, paste0(Sys.Date(), ".csv"))
+    main_data_set_path, 
+    file.path(backup_dir, paste0(Sys.Date(), ".csv"))
   )
   # replace the final data set,
-  readr::write_excel_csv2(res_dat, here::here(final_data_set))
+  readr::write_excel_csv2(res_dat, main_data_set_path)
   # empty the previous data set,
-  readr::write_excel_csv2(res_dat[FALSE, ], here::here(new_data_set))
-  # and move the media files
+  readr::write_excel_csv2(res_dat[FALSE, ], new_data_set_path)
+  # and move the images
+  img_paths <- list.files(new_data_dir, full.names = TRUE, pattern = "[.]jpg$")
   file.rename(
-    from = list.files(here::here(new_media), recursive = TRUE, full.names = TRUE),
-    to = paste0(final_media, "/", list.files(here::here(new_media), recursive = TRUE))
+    from = img_paths,
+    to = file.path(main_image_dir, basename(img_paths))
   )
   
 }
