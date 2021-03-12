@@ -1,4 +1,7 @@
 #' Update the data set and the directory system of `new_data`
+#' 
+#' Updating the directory system is optional and it's set to `FALSE` by default. With the 
+#' new system of including new words there is no need to update the directory system.
 #'
 #' @param new_data_media path to the directory with the media files of the new words
 #' @param new_data_set path to the data set with the new words
@@ -10,20 +13,28 @@
 #'
 #' @examples
 
-update_new_data <- function(new_data_media, new_data_set, main_data_media, main_data_set) {
+update_new_data <- function(
+  new_data_media, 
+  new_data_set, 
+  main_data_media = "", 
+  main_data_set = "",
+  update_dirs = FALSE
+) {
   
-  # obtain the information for directories
-  new_dirs <- list.dirs(here::here(new_data_media), full.names = FALSE)
-  main_dirs <- list.dirs(here::here(main_data_media), full.names = FALSE)
-  # deal with non-existing directories
-  for (dir in main_dirs[!main_dirs %in% new_dirs]) {
-    dir.create(here::here(new_data_media, dir))
+  if (update_dirs) {
+    # obtain the information for directories
+    new_dirs <- list.dirs(here::here(new_data_media), full.names = FALSE)
+    main_dirs <- list.dirs(here::here(main_data_media), full.names = FALSE)
+    # deal with non-existing directories
+    for (dir in main_dirs[!main_dirs %in% new_dirs]) {
+      dir.create(here::here(new_data_media, dir))
+    }
+    # # MAYBE REMOVING THINGS IN THIS FUNCTION IS NOT A GOOD IDEA :(
+    # # deal with leftover directories
+    # for (dir in new_dirs[!new_dirs %in% main_dirs]) {
+    #   unlink(here::here(new_data_media, dir), recursive = TRUE)
+    # }
   }
-  # # MAYBE REMOVING THINGS IN THIS FUNCTION IS NOT A GOOD IDEA :(
-  # # deal with leftover directories
-  # for (dir in new_dirs[!new_dirs %in% main_dirs]) {
-  #   unlink(here::here(new_data_media, dir), recursive = TRUE)
-  # }
   
   # read data sets
   dat_new <- suppressMessages(readr::read_csv2(here::here(new_data_set)))
