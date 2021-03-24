@@ -54,7 +54,7 @@ tts_forvo <- function(
     if (!file %in% list.files(output_dir)) {
       try({
         # transform the word to be accepted as URL
-        word <- URLencode(enc2utf8(word))
+        word <- URLencode(enc2utf8(word), reserved = TRUE)
         
         # create a list with the arguments/parameters
         req <- list(
