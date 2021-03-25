@@ -46,12 +46,14 @@ tts_forvo <- function(
   # url of the API
   API <- "https://apifree.forvo.com"
   
+  # remove the NAs from the words
+  words <- words[!is.na(words)]
   # loop to download the words
   for (word in words) {
     # name of the file
     file <- paste0("vocab-", language, "-", word, ".mp3")
     # check that the file does not exist already
-    if (!file %in% list.files(output_dir)) {
+    if (!file %in% basename(fs::dir_ls(output_dir))) {
       try({
         # transform the word to be accepted as URL
         word <- URLencode(enc2utf8(word), reserved = TRUE)
@@ -87,12 +89,18 @@ tts_forvo <- function(
         
         # read the response with JSON
         res <- rjson::fromJSON(file = req)
-        # extract the path to the MP3 file from the first element in the list
-        audio_html <- res$items[[1]]$pathmp3
-        # download and rename the file (problems with encoding)
-        temp_file <- file.path(output_dir, paste0(word, ".mp3"))
-        download.file(audio_html, temp_file, mode = "wb")
-        file.rename(temp_file, file.path(output_dir, file))
+        
+        # check that the field is not empty
+        if (length(res$items) > 0) {
+          # extract the path to the MP3 file from the first element in the list
+          audio_html <- res$items[[1]]$pathmp3
+          # download and rename the file (problems with encoding)
+          temp_file <- file.path(output_dir, paste0(word, ".mp3"))
+          download.file(audio_html, temp_file, mode = "wb")
+          file.rename(temp_file, file.path(output_dir, file))
+        } else {
+          warning("There is no information of the word ", word)
+        }
       })
     }
   }
