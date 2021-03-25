@@ -56,8 +56,8 @@ tts_forvo <- function(
         # transform the word to be accepted as URL
         word <- URLencode(enc2utf8(word), reserved = TRUE)
         
-        # create a list with the arguments/parameters
-        req <- list(
+        # create a character vector with the arguments/parameters
+        req <- c(
           "key" = key,
           "format" = format,
           "action" = action,
@@ -72,15 +72,16 @@ tts_forvo <- function(
           "limit" = limit
         )
         # don't include the empty arguments/parameters
-        i <- vapply(req, function(x) nchar(x) > 0, logical(1))
-        req <- req[i]
+        req <- req[nchar(req) > 0]
         # put the names between the arguments to create the URL
-        for (i in seq_along(req)) {
-          # change the order
-          req[[i]][2] <- req[[i]][1]
-          req[[i]][1] <- names(req[i])
-        }
-        req <- paste0(unlist(req), collapse = "/")
+        req <- paste0(
+          vapply(
+            seq_along(req), 
+            function(i) paste(names(req)[[i]], unname(req)[[i]], sep = "/"), 
+            character(1)
+          ),
+          collapse = "/"
+        )
         # add the beginning of the URL
         req <- paste0(API, "/", req)
         
