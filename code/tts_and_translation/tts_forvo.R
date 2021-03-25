@@ -77,7 +77,7 @@ tts_forvo <- function(
         req <- paste0(
           vapply(
             seq_along(req), 
-            function(i) paste(names(req)[[i]], unname(req)[[i]], sep = "/"), 
+            function(i) paste0(names(req)[[i]], "/", unname(req)[[i]]), 
             character(1)
           ),
           collapse = "/"
