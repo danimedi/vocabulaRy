@@ -55,7 +55,7 @@ tts_forvo <- function(
     # name of the file
     file <- paste0("vocab-", language, "-", word, ".mp3")
     # check that the file does not exist already
-    if ((!file %in% basename(fs::dir_ls(output_dir))) & errors < 4) {
+    if (!file %in% basename(fs::dir_ls(output_dir))) {
       try({
         # transform the word to be accepted as URL
         word <- URLencode(enc2utf8(word), reserved = TRUE)
@@ -89,11 +89,13 @@ tts_forvo <- function(
         # add the beginning of the URL
         req <- paste0(API, "/", req)
         
+        # obtain the response from the API and count the errors
         tryCatch({
           res <- rjson::fromJSON(file = req)
           errors <- 0
         }, error = function(cnd) errors <<- errors + 1
         )
+        stopifnot(errors < 4)
         
         # check that the field is not empty
         if (length(res$items) > 0) {
