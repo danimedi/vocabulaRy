@@ -48,12 +48,14 @@ tts_forvo <- function(
   
   # remove the NAs from the words
   words <- words[!is.na(words)]
+  # count errors
+  errors <- 0
   # loop to download the words
   for (word in words) {
     # name of the file
     file <- paste0("vocab-", language, "-", word, ".mp3")
     # check that the file does not exist already
-    if (!file %in% basename(fs::dir_ls(output_dir))) {
+    if ((!file %in% basename(fs::dir_ls(output_dir))) & errors < 4) {
       try({
         # transform the word to be accepted as URL
         word <- URLencode(enc2utf8(word), reserved = TRUE)
@@ -87,8 +89,11 @@ tts_forvo <- function(
         # add the beginning of the URL
         req <- paste0(API, "/", req)
         
-        # read the response with JSON
-        res <- rjson::fromJSON(file = req)
+        tryCatch({
+          res <- rjson::fromJSON(file = req)
+          errors <- 0
+        }, error = function(cnd) errors <<- errors + 1
+        )
         
         # check that the field is not empty
         if (length(res$items) > 0) {
