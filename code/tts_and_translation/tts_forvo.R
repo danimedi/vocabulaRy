@@ -56,59 +56,59 @@ tts_forvo <- function(
     file <- paste0("vocab-", language, "-", word, ".mp3")
     # check that the file does not exist already
     if (!file %in% basename(fs::dir_ls(output_dir))) {
-      try({
-        # transform the word to be accepted as URL
-        word <- URLencode(enc2utf8(word), reserved = TRUE)
-        
-        # create a character vector with the arguments/parameters
-        req <- c(
-          "key" = key,
-          "format" = format,
-          "action" = action,
-          "word" = word,
-          "language" = language_code,
-          "sex" = sex,
-          "country" = country,
-          "order" = order,
-          "group-in-languages" = group_in_languages,
-          "username" = username,
-          "rate" = rate,
-          "limit" = limit
-        )
-        # don't include the empty arguments/parameters
-        req <- req[nchar(req) > 0]
-        # put the names between the arguments to create the URL
-        req <- paste0(
-          vapply(
-            seq_along(req), 
-            function(i) paste0(names(req)[[i]], "/", unname(req)[[i]]), 
-            character(1)
-          ),
-          collapse = "/"
-        )
-        # add the beginning of the URL
-        req <- paste0(API, "/", req)
-        
-        # obtain the response from the API and count the errors
-        tryCatch({
-          res <- rjson::fromJSON(file = req)
-          errors <- 0
-        }, error = function(cnd) errors <<- errors + 1
-        )
-        stopifnot(errors < 4)
-        
-        # check that the field is not empty
-        if (length(res$items) > 0) {
-          # extract the path to the MP3 file from the first element in the list
-          audio_html <- res$items[[1]]$pathmp3
-          # download and rename the file (problems with encoding)
-          temp_file <- file.path(output_dir, paste0(word, ".mp3"))
-          download.file(audio_html, temp_file, mode = "wb")
-          file.rename(temp_file, file.path(output_dir, file))
-        } else {
-          warning("There is no information of the word ", word)
-        }
+      # transform the word to be accepted as URL
+      word <- URLencode(enc2utf8(word), reserved = TRUE)
+      
+      # create a character vector with the arguments/parameters
+      req <- c(
+        "key" = key,
+        "format" = format,
+        "action" = action,
+        "word" = word,
+        "language" = language_code,
+        "sex" = sex,
+        "country" = country,
+        "order" = order,
+        "group-in-languages" = group_in_languages,
+        "username" = username,
+        "rate" = rate,
+        "limit" = limit
+      )
+      # don't include the empty arguments/parameters
+      req <- req[nchar(req) > 0]
+      # put the names between the arguments to create the URL
+      req <- paste0(
+        vapply(
+          seq_along(req), 
+          function(i) paste0(names(req)[[i]], "/", unname(req)[[i]]), 
+          character(1)
+        ),
+        collapse = "/"
+      )
+      # add the beginning of the URL
+      req <- paste0(API, "/", req)
+      
+      # obtain the response from the API and count the errors
+      tryCatch({
+        res <- rjson::fromJSON(file = req)
+        errors <- 0
+      }, error = function(cnd) {
+        errors <<- errors + 1
+        print(e)
       })
+      stopifnot(errors < 4)
+      
+      # check that the field is not empty
+      if (length(res$items) > 0) {
+        # extract the path to the MP3 file from the first element in the list
+        audio_html <- res$items[[1]]$pathmp3
+        # download and rename the file (problems with encoding)
+        temp_file <- file.path(output_dir, paste0(word, ".mp3"))
+        download.file(audio_html, temp_file, mode = "wb")
+        file.rename(temp_file, file.path(output_dir, file))
+      } else {
+        warning("No information for ", word)
+      }
     }
   }
 }
