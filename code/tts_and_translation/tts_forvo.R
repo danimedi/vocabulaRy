@@ -108,10 +108,14 @@ tts_forvo <- function(
       # handle errors and warnings
       error = function(cnd) {
         errors <<- errors + 1
+        warning(cnd)
       },
-      warning = function(cnd) cnd
+      warning = function(cnd) {
+        errors <<- errors + 1
+        warning(cnd)
+      }
       )
-      stopifnot(errors < 4)
+      stopifnot(errors < 5)
     }
   }
 }
