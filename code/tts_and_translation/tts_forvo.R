@@ -92,23 +92,26 @@ tts_forvo <- function(
       tryCatch({
         res <- rjson::fromJSON(file = req)
         errors <- 0
-      }, error = function(cnd) {
+        
+        # check that the field is not empty
+        if (length(res$items) > 0) {
+          # extract the path to the MP3 file from the first element in the list
+          audio_html <- res$items[[1]]$pathmp3
+          # download and rename the file (problems with encoding)
+          temp_file <- file.path(output_dir, paste0(word, ".mp3"))
+          download.file(audio_html, temp_file, mode = "wb")
+          file.rename(temp_file, file.path(output_dir, file))
+        } else {
+          warning("No information for ", word)
+        }
+      }, 
+      # handle errors and warnings
+      error = function(cnd) {
         errors <<- errors + 1
-        print(e)
-      })
+      },
+      warning = function(cnd) cnd
+      )
       stopifnot(errors < 4)
-      
-      # check that the field is not empty
-      if (length(res$items) > 0) {
-        # extract the path to the MP3 file from the first element in the list
-        audio_html <- res$items[[1]]$pathmp3
-        # download and rename the file (problems with encoding)
-        temp_file <- file.path(output_dir, paste0(word, ".mp3"))
-        download.file(audio_html, temp_file, mode = "wb")
-        file.rename(temp_file, file.path(output_dir, file))
-      } else {
-        warning("No information for ", word)
-      }
     }
   }
 }
