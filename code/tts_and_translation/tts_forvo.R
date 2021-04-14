@@ -50,7 +50,9 @@ tts_forvo <- function(
   words <- words[!is.na(words)]
   # count errors
   errors <- 0
-  # loop to download the words
+  # loop to download the words and return a vector with downloaded files
+  downloaded <- rep(NA, length(words))
+  names(downloaded) <- words
   for (word in words) {
     # name of the file
     file <- paste0("vocab-", language, "-", word, ".mp3")
@@ -101,21 +103,20 @@ tts_forvo <- function(
           temp_file <- file.path(output_dir, paste0(word, ".mp3"))
           download.file(audio_html, temp_file, mode = "wb")
           file.rename(temp_file, file.path(output_dir, file))
+          downloaded[word] <- TRUE
         } else {
-          warning("No information for ", word)
+          downloaded[word] <- FALSE
         }
       }, 
       # handle errors and warnings
       error = function(cnd) {
         errors <<- errors + 1
         warning(cnd)
-      },
-      warning = function(cnd) {
-        errors <<- errors + 1
-        warning(cnd)
       }
       )
-      stopifnot(errors < 5)
+      if (!errors < 5) break
     }
   }
+  # NAs represent those words that already exist, so they were not downloaded
+  downloaded[!is.na(downloaded)]
 }
