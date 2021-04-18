@@ -1,32 +1,34 @@
-#' Generate an output data set selecting only the columns of a language and the other 
-#' needed to import data from a language in Anki
+#' Generate output data set ready to be imported to Anki
 #'
-#' @param in_dat main_data set containing all the languages
-#' @param out_dat data_set to be generated with the function
-#' @param language language to be filtered
-#' @param help_column string (or vector of strings) indicating the names of the additional
-#' columns to be included in the output data set
+#' Use the main data set to generate a data set to be imported to Anki, it contains the
+#' information for one language, and it generates columns with HTML format (e.g. audios and
+#' images).
 #'
-#' @return Create a CSV file
+#' @param language The language which is used to generate the data.
+#' @param data The main data set.
+#'
+#' @return A tibble.
 #' @export
 #'
 #' @examples
-#' 
-generate_output <- function(in_dat, out_dat, language, help_language = c()) {
-  # read input data and filter
-  dat <- suppressMessages(readr::read_csv2(in_dat))
-  # include the help language column (optional)
-  if (length(help_language) > 0) {
-    dat <- dplyr::select(dat, word, image_html, tidyselect::starts_with(language), 
-                         tidyselect::all_of(help_language))
-  } else {
-    dat <- dplyr::select(dat, word, image_html, tidyselect::starts_with(language))
+generate_output <- function(language, data = "data/data_set.csv") {
+  dat <- readr::read_csv2(data)
+  if (!any(language == names(dat))) {
+    stop("That language is not available")
   }
-  # remove audio column (no html) if present
-  i <- vapply(dat, function(x) !all(startsWith(x, "vocab-")), logical(1))
-  dat <- dat[,i]
-  # modify the first column to create the first field used in Anki
-  dat$word <- paste0(dat$word, " - ", language)
-  dat <- dplyr::rename(dat, first_field = word)
-  readr::write_excel_csv2(dat, out_dat)
+  # Generate the output data set ready to be imported in Anki
+  output <- tibble::tibble(
+    first_field = paste0(dat$word, " - ", language),
+    word = dat[[language]],
+    image_html = paste0("<img src=\"vocab-", dat$word, ".jpg\">"),
+    audio_html = paste0("[sound:vocab-portuguese-", dat[[language]], ".mp3]")
+  )
+  # Some languages need a column with romanization of the words
+  if (language == "chinese") {
+    output$pinyin <- dat$pinyin
+  }
+  if (language == "cantonese") {
+    output$jyutping <- dat$jyutping
+  }
+  output
 }
