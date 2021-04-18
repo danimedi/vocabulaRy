@@ -12,9 +12,9 @@
 #'
 #' @examples
 generate_output <- function(language, data = "data/data_set.csv") {
-  dat <- readr::read_csv2(data)
+  dat <- suppressMessages(readr::read_csv2(data))
   if (!any(language == names(dat))) {
-    stop("That language is not available")
+    stop("The language is not available")
   }
   # Generate the output data set ready to be imported in Anki
   output <- tibble::tibble(
