@@ -11,8 +11,9 @@
 #' @export
 #'
 #' @examples
-generate_output <- function(language, data = "data/data_set.csv") {
-  dat <- suppressMessages(readr::read_csv2(data))
+#' generate_output("spanish")
+generate_output <- function(language) {
+  dat <- data_set
   if (!any(language == names(dat))) {
     stop("The language is not available")
   }
