@@ -1,9 +1,6 @@
-test_that("names of images coincide", {
-  imgs_dat <- paste0("vocab-", data_set$word, ".jpg")
-  imgs_files <- list.files("data-raw/media/images")
-  expect_equal(sort(imgs_dat), sort(imgs_files))
-})
-
-test_that("names of audios coincide", {
-
+test_that("images coincide", {
+  dat <- readr::read_csv2(here::here("data-raw/data_set.csv"))
+  imgs_dat <- paste0("vocab-", dat$word, ".jpg")
+  imgs_files <- list.files(here::here("data-raw/media/images"))
+  expect_setequal(imgs_dat, imgs_files)
 })
