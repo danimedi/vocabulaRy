@@ -4,7 +4,7 @@
 \alias{generate_output}
 \title{Generate output data set ready to be imported to Anki}
 \usage{
-generate_output(language, data = "data/data_set.csv")
+generate_output(language)
 }
 \arguments{
 \item{language}{The language which is used to generate the data.}
@@ -18,4 +18,7 @@ A tibble.
 Use the main data set to generate a data set to be imported to Anki, it contains the
 information for one language, and it generates columns with HTML format (e.g. audios and
 images).
+}
+\examples{
+generate_output("spanish")
 }
