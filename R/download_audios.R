@@ -18,3 +18,8 @@ download_audios <- function(language) {
   unused <- setdiff(audio_files, audio_data)
   file.remove(file.path(lookup$audio_path, unused))
 }
+
+# Loop for the function
+download_audios_all <- function() {
+  purrr::walk(audio_language_and_path()$language, download_audios)
+}
