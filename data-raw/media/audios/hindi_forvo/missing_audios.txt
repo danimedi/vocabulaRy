@@ -1,0 +1,166 @@
+vocab-hindi-कोण.mp3
+vocab-hindi-NA.mp3
+vocab-hindi-पीछे.mp3
+vocab-hindi-शयनकक्ष.mp3
+vocab-hindi-गोमांस.mp3
+vocab-hindi-मुड़ना.mp3
+vocab-hindi-हुण्डी.mp3
+vocab-hindi-खून.mp3
+vocab-hindi-बूट.mp3
+vocab-hindi-बोतल.mp3
+vocab-hindi-तोड़ना.mp3
+vocab-hindi-ब्रश.mp3
+vocab-hindi-निर्माण करना.mp3
+vocab-hindi-बटन.mp3
+vocab-hindi-खरीदना.mp3
+vocab-hindi-नाम से बुलाना.mp3
+vocab-hindi-कैमरा.mp3
+vocab-hindi-कार्ड.mp3
+vocab-hindi-छकड़ा गाड़ी.mp3
+vocab-hindi-मोबाइल फ़ोन.mp3
+vocab-hindi-जंजीर.mp3
+vocab-hindi-गिरजाघर.mp3
+vocab-hindi-वृत्त.mp3
+vocab-hindi-साफ.mp3
+vocab-hindi-साफ करना.mp3
+vocab-hindi-वस्त्र.mp3
+vocab-hindi-नाइटक्लब.mp3
+vocab-hindi-कंप्यूटर.mp3
+vocab-hindi-तांबा.mp3
+vocab-hindi-न्यायालय.mp3
+vocab-hindi-प्याला.mp3
+vocab-hindi-पर्दा.mp3
+vocab-hindi-नृत्य करना.mp3
+vocab-hindi-गहरा.mp3
+vocab-hindi-खोदना.mp3
+vocab-hindi-रात्रि भोजन.mp3
+vocab-hindi-सपने देखना.mp3
+vocab-hindi-एज.mp3
+vocab-hindi-इलेक्ट्रानिक्स.mp3
+vocab-hindi-यन्त्र.mp3
+vocab-hindi-पलायन.mp3
+vocab-hindi-गिरने के लिये.mp3
+vocab-hindi-ख्याति प्राप्त.mp3
+vocab-hindi-लड़ने के लिए.mp3
+vocab-hindi-पंज.mp3
+vocab-hindi-समतल.mp3
+vocab-hindi-अनुसरण करने के लिए.mp3
+vocab-hindi-नि: शुल्क.mp3
+vocab-hindi-पेट्रोल.mp3
+vocab-hindi-चल देना.mp3
+vocab-hindi-अच्छा न.mp3
+vocab-hindi-दादी मा.mp3
+vocab-hindi-बढ़ना.mp3
+vocab-hindi-बंदूक.mp3
+vocab-hindi-शुभ स.mp3
+vocab-hindi-सुनो.mp3
+vocab-hindi-तपिश.mp3
+vocab-hindi-हैवी.mp3
+vocab-hindi-अंकुड़ा.mp3
+vocab-hindi-सींग.mp3
+vocab-hindi-इस घंटे.mp3
+vocab-hindi-छवि.mp3
+vocab-hindi-यंत्र.mp3
+vocab-hindi-कूदना.mp3
+vocab-hindi-चाभी.mp3
+vocab-hindi-किलोग्राम.mp3
+vocab-hindi-चुम्मा.mp3
+vocab-hindi-भाषा: हिन्दी.mp3
+vocab-hindi-लैपटॉप.mp3
+vocab-hindi-लीफ.mp3
+vocab-hindi-बाएं.mp3
+vocab-hindi-टांग.mp3
+vocab-hindi-पत्र.mp3
+vocab-hindi-नीचे लिटाना.mp3
+vocab-hindi-उठा देना.mp3
+vocab-hindi-लाइन.mp3
+vocab-hindi-बात सुनो.mp3
+vocab-hindi-खोने के लिए.mp3
+vocab-hindi-खोया हुआ.mp3
+vocab-hindi-प्यार करने के लिए.mp3
+vocab-hindi-मुक़द्दर का सिकंदर.mp3
+vocab-hindi-दोपहर का भोजन.mp3
+vocab-hindi-पु रूप.mp3
+vocab-hindi-जुलूस.mp3
+vocab-hindi-शादी कर.mp3
+vocab-hindi-का मतलब.mp3
+vocab-hindi-पिघल.mp3
+vocab-hindi-संदेश.mp3
+vocab-hindi-मिक्स.mp3
+vocab-hindi-संकीर्ण.mp3
+vocab-hindi-पास में.mp3
+vocab-hindi-नेटवर्क.mp3
+vocab-hindi-नवीन व.mp3
+vocab-hindi-नव्वे.mp3
+vocab-hindi-नहीं न.mp3
+vocab-hindi-ध्यान दें.mp3
+vocab-hindi-खुला हुआ.mp3
+vocab-hindi-पैंट.mp3
+vocab-hindi-पार्क.mp3
+vocab-hindi-पारित करने के लिए.mp3
+vocab-hindi-प्रतिरूप.mp3
+vocab-hindi-भुगतान करने के लिए.mp3
+vocab-hindi-फोटोग्राफी.mp3
+vocab-hindi-पिन.mp3
+vocab-hindi-ज़हर.mp3
+vocab-hindi-पूल.mp3
+vocab-hindi-गरीब.mp3
+vocab-hindi-सुअर का मांस.mp3
+vocab-hindi-पुजारी.mp3
+vocab-hindi-जेल व.mp3
+vocab-hindi-खींचें.mp3
+vocab-hindi-धक्का दें.mp3
+vocab-hindi-रानी.mp3
+vocab-hindi-रेस.mp3
+vocab-hindi-याद करते.mp3
+vocab-hindi-रिपोर्टर.mp3
+vocab-hindi-खाने की दुकान.mp3
+vocab-hindi-धनी.mp3
+vocab-hindi-चक्राकार पदार्थ.mp3
+vocab-hindi-चलाने के लिए.mp3
+vocab-hindi-कहने के लिए.mp3
+vocab-hindi-डरा हुआ.mp3
+vocab-hindi-स्क्रू.mp3
+vocab-hindi-देखने के लिए.mp3
+vocab-hindi-उथला.mp3
+vocab-hindi-भेड़.mp3
+vocab-hindi-शेल्फ.mp3
+vocab-hindi-समुंद्री जहाज.mp3
+vocab-hindi-गोली मार.mp3
+vocab-hindi-गाओ.mp3
+vocab-hindi-बैठिये.mp3
+vocab-hindi-गंध.mp3
+vocab-hindi-मुस्कुराओ.mp3
+vocab-hindi-फोजी.mp3
+vocab-hindi-ध्वनि.mp3
+vocab-hindi-सूप.mp3
+vocab-hindi-स्पंज.mp3
+vocab-hindi-बहार ह.mp3
+vocab-hindi-डाक टिकट.mp3
+vocab-hindi-रुकें.mp3
+vocab-hindi-टेबल.mp3
+vocab-hindi-प्राप्त करने के लिए.mp3
+vocab-hindi-शिक्षा देने के लिए.mp3
+vocab-hindi-टेलीफोन.mp3
+vocab-hindi-टीवी.mp3
+vocab-hindi-क्या आप वहां मौजूद हैं.mp3
+vocab-hindi-अंगूठे.mp3
+vocab-hindi-टायर.mp3
+vocab-hindi-पैर की अंगुली.mp3
+vocab-hindi-साथ में.mp3
+vocab-hindi-रेलवे स्टेशन.mp3
+vocab-hindi-रेल गाडी.mp3
+vocab-hindi-ट्रांसपोर्ट.mp3
+vocab-hindi-ट्रे.mp3
+vocab-hindi-जागृत करने के लिए.mp3
+vocab-hindi-टहल लो.mp3
+vocab-hindi-पहन लेना.mp3
+vocab-hindi-भीगी भीगी.mp3
+vocab-hindi-पहिया.mp3
+vocab-hindi-कोड़ा.mp3
+vocab-hindi-जीतने के लिए.mp3
+vocab-hindi-विंग.mp3
+vocab-hindi-वायर.mp3
+vocab-hindi-काम करने के लिए.mp3
+vocab-hindi-कीड़ा.mp3
+vocab-hindi-आप प.mp3
