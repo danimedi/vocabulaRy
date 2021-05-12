@@ -22,7 +22,7 @@ generate_output <- function(language) {
     first_field = paste0(dat$word, " - ", language),
     word = dat[[language]],
     image_html = paste0("<img src=\"vocab-", dat$word, ".jpg\">"),
-    audio_html = paste0("[sound:vocab-portuguese-", dat[[language]], ".mp3]")
+    audio_html = paste0("[sound:vocab-", language, "-", dat[[language]], ".mp3]")
   )
   # Some languages need a column with romanization of the words
   if (language == "chinese") {
