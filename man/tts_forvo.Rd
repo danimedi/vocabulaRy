@@ -33,22 +33,6 @@ e.g. "french"}
 
 \item{sex}{"m" for male, "f" for female}
 
-\item{country}{}
-
-\item{order}{}
-
-\item{group_in_languages}{}
-
-\item{username}{}
-
-\item{rate}{}
-
-\item{limit}{}
-
-\item{key}{}
-
-\item{action}{}
-
 \item{format}{}
 }
 \value{

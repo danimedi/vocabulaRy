@@ -2,23 +2,15 @@
 % Please edit documentation in R/generate_output.R
 \name{generate_output}
 \alias{generate_output}
-\title{Generate output data set ready to be imported to Anki}
+\title{Create output files for a language in an specified directory}
 \usage{
-generate_output(language)
-}
-\arguments{
-\item{language}{The language which is used to generate the data.}
-
-\item{data}{The main data set.}
+generate_output(language, path)
 }
 \value{
-A tibble.
+
 }
 \description{
 Use the main data set to generate a data set to be imported to Anki, it contains the
 information for one language, and it generates columns with HTML format (e.g. audios and
 images).
-}
-\examples{
-generate_output("spanish")
 }
