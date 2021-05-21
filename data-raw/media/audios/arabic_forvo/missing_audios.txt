@@ -1,6 +1,6 @@
-vocab-arabic-مصباح الإضاءة.mp3
-vocab-arabic-NA.mp3
-vocab-arabic-عود ثِقاب.mp3
-vocab-arabic-حوض غسيل.mp3
-vocab-arabic-ساق نبات.mp3
-vocab-arabic-حَرْف مُتَحَرِّك.mp3
+مصباح الإضاءة.mp3
+NA.mp3
+عود ثِقاب.mp3
+حوض غسيل.mp3
+ساق نبات.mp3
+حَرْف مُتَحَرِّك.mp3

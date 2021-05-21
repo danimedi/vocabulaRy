@@ -1,200 +1,200 @@
-vocab-bengali-একা.mp3
-vocab-bengali-কোণ.mp3
-vocab-bengali-কামরা.mp3
-vocab-bengali-এপ্রিল.mp3
-vocab-bengali-NA.mp3
-vocab-bengali-সেনা.mp3
-vocab-bengali-জিজ্ঞাসা করা.mp3
-vocab-bengali-থলে.mp3
-vocab-bengali-মদের দোকান.mp3
-vocab-bengali-সর্বনাশ.mp3
-vocab-bengali-গরুর মাংস.mp3
-vocab-bengali-বাঁকানো.mp3
-vocab-bengali-বেরি.mp3
-vocab-bengali-পান করা.mp3
-vocab-bengali-বিল.mp3
-vocab-bengali-বুট.mp3
-vocab-bengali-পটভূমি.mp3
-vocab-bengali-বক্স.mp3
-vocab-bengali-ব্রেক.mp3
-vocab-bengali-ব্রেকফাস্ট.mp3
-vocab-bengali-ইট.mp3
-vocab-bengali-বাদামী.mp3
-vocab-bengali-ব্রাশ.mp3
-vocab-bengali-বিল্ড.mp3
-vocab-bengali-ভবন.mp3
-vocab-bengali-ক্রয়.mp3
-vocab-bengali-পিষ্টক.mp3
-vocab-bengali-শিবির.mp3
-vocab-bengali-গাড়ী.mp3
-vocab-bengali-কার্ড.mp3
-vocab-bengali-বহন করা.mp3
-vocab-bengali-কার্ট.mp3
-vocab-bengali-মুরগির মাংস.mp3
-vocab-bengali-থুতনি.mp3
-vocab-bengali-গির্জা.mp3
-vocab-bengali-পরিস্কার করতে.mp3
-vocab-bengali-ক্লাব.mp3
-vocab-bengali-কম্পিউটার.mp3
-vocab-bengali-ব্যঞ্জনবর্ণ.mp3
-vocab-bengali-রান্না করতে.mp3
-vocab-bengali-তামা.mp3
-vocab-bengali-গাভী.mp3
-vocab-bengali-পরদা.mp3
-vocab-bengali-নাচতে.mp3
-vocab-bengali-মরণ.mp3
-vocab-bengali-মরতে.mp3
-vocab-bengali-খনন করা.mp3
-vocab-bengali-ডিনার.mp3
-vocab-bengali-অভিমুখ.mp3
-vocab-bengali-পান করতে.mp3
-vocab-bengali-ড্রাইভ.mp3
-vocab-bengali-ঝরা.mp3
-vocab-bengali-ড্রাগ.mp3
-vocab-bengali-ধূলিকণা.mp3
-vocab-bengali-প্রান্ত.mp3
-vocab-bengali-অব্যাহতি.mp3
-vocab-bengali-বিস্ফোরিত করা.mp3
-vocab-bengali-এ পর্যন্ত.mp3
-vocab-bengali-খামার.mp3
-vocab-bengali-পালক.mp3
-vocab-bengali-ফেব্রুয়ারি.mp3
-vocab-bengali-ভোজন.mp3
-vocab-bengali-অনুসন্ধান.mp3
-vocab-bengali-আঙ্গুল.mp3
-vocab-bengali-মাছি.mp3
-vocab-bengali-বন। জংগল.mp3
-vocab-bengali-কাঁটাচামচ.mp3
-vocab-bengali-চতুর্দশ.mp3
-vocab-bengali-ফ্রেম.mp3
-vocab-bengali-বিনামূল্যে.mp3
-vocab-bengali-সদর.mp3
-vocab-bengali-হাস্যকর.mp3
-vocab-bengali-পেট্রল.mp3
-vocab-bengali-কাচ.mp3
-vocab-bengali-দস্তানা.mp3
-vocab-bengali-সৃষ্টিকর্তা.mp3
-vocab-bengali-ভাল.mp3
-vocab-bengali-নানী.mp3
-vocab-bengali-স্থল.mp3
-vocab-bengali-হত্তয়া.mp3
-vocab-bengali-বন্দুক.mp3
-vocab-bengali-ফাঁসি দেত্তয়া.mp3
-vocab-bengali-টুপি.mp3
-vocab-bengali-তাপ.mp3
-vocab-bengali-জাহান্নাম.mp3
-vocab-bengali-হুক.mp3
-vocab-bengali-শিঙা.mp3
-vocab-bengali-মানবীয়.mp3
-vocab-bengali-চিত্র.mp3
-vocab-bengali-ইঞ্চি.mp3
-vocab-bengali-ভিতরে.mp3
-vocab-bengali-মণি.mp3
-vocab-bengali-রস.mp3
-vocab-bengali-লাফ দিতে.mp3
-vocab-bengali-কেতলি.mp3
-vocab-bengali-কিলোগ্রাম.mp3
-vocab-bengali-ছুরি.mp3
-vocab-bengali-ল্যাপটপ.mp3
-vocab-bengali-হাসি থেকে.mp3
-vocab-bengali-অ্যাটর্নি.mp3
-vocab-bengali-গাছের পাতা.mp3
-vocab-bengali-উত্তোলন করতে.mp3
-vocab-bengali-লাইন.mp3
-vocab-bengali-হারান.mp3
-vocab-bengali-নিখোঁজ.mp3
-vocab-bengali-অট্ট.mp3
-vocab-bengali-ভালবাসতে.mp3
-vocab-bengali-কম.mp3
-vocab-bengali-ভাগ্যবান.mp3
-vocab-bengali-মধ্যাহ্নভোজ.mp3
-vocab-bengali-মার্চ.mp3
-vocab-bengali-বিবাহ করা.mp3
-vocab-bengali-মে.mp3
-vocab-bengali-মানে.mp3
-vocab-bengali-দ্রবীভূত করা.mp3
-vocab-bengali-মিটার.mp3
-vocab-bengali-মিশ্রণ.mp3
-vocab-bengali-পর্বত.mp3
-vocab-bengali-মাউস.mp3
-vocab-bengali-সিনেমা.mp3
-vocab-bengali-পেশী.mp3
-vocab-bengali-স্নায়ু.mp3
-vocab-bengali-অন্তর্জাল.mp3
-vocab-bengali-বিঃদ্রঃ.mp3
-vocab-bengali-দপ্তর.mp3
-vocab-bengali-পৃষ্ঠা.mp3
-vocab-bengali-অতিক্রম করতে.mp3
-vocab-bengali-রোগী.mp3
-vocab-bengali-প্যাটার্ন.mp3
-vocab-bengali-পরিশোধ করতে.mp3
-vocab-bengali-ফটোগ্রাফি.mp3
-vocab-bengali-টুকরা.mp3
-vocab-bengali-পিন.mp3
-vocab-bengali-গোলাপী.mp3
-vocab-bengali-প্লাস্টিক.mp3
-vocab-bengali-প্লেট.mp3
-vocab-bengali-দরিদ্র.mp3
-vocab-bengali-শুয়োরের মাংস.mp3
-vocab-bengali-প্রার্থনা করা.mp3
-vocab-bengali-যাজক.mp3
-vocab-bengali-টান.mp3
-vocab-bengali-রেডিও.mp3
-vocab-bengali-প্রাপ্তি.mp3
-vocab-bengali-মনে রাখা.mp3
-vocab-bengali-রেঁস্তোরা.mp3
-vocab-bengali-সমৃদ্ধ.mp3
-vocab-bengali-চালান.mp3
-vocab-bengali-দু: খিত.mp3
-vocab-bengali-বলতে.mp3
-vocab-bengali-বিজ্ঞান.mp3
-vocab-bengali-স্ক্রু.mp3
-vocab-bengali-মৌসম.mp3
-vocab-bengali-বিক্রয়.mp3
-vocab-bengali-লিঙ্গ.mp3
-vocab-bengali-মেষ.mp3
-vocab-bengali-অংস.mp3
-vocab-bengali-Sing.mp3
-vocab-bengali-ধীর.mp3
-vocab-bengali-গন্ধ.mp3
-vocab-bengali-জীবনযাপন করা.mp3
-vocab-bengali-দাগ.mp3
-vocab-bengali-ছাপ.mp3
-vocab-bengali-লাঠি.mp3
-vocab-bengali-স্টপ.mp3
-vocab-bengali-সন্তরণ.mp3
-vocab-bengali-গ্রহণ করতে.mp3
-vocab-bengali-স্বাদ.mp3
-vocab-bengali-শেখান.mp3
-vocab-bengali-টীম.mp3
-vocab-bengali-টিয়ার.mp3
-vocab-bengali-টেলিফোন.mp3
-vocab-bengali-মনে.mp3
-vocab-bengali-তের.mp3
-vocab-bengali-অঙ্গুষ্ঠ.mp3
-vocab-bengali-পাগড়ি.mp3
-vocab-bengali-পদাঙ্গুলি.mp3
-vocab-bengali-একসঙ্গে.mp3
-vocab-bengali-টুল.mp3
-vocab-bengali-শীর্ষ.mp3
-vocab-bengali-স্পর্শ করতে.mp3
-vocab-bengali-রেল ষ্টেশন.mp3
-vocab-bengali-পরিবহন.mp3
-vocab-bengali-ট্রে.mp3
-vocab-bengali-চালু.mp3
-vocab-bengali-বার.mp3
-vocab-bengali-অরুপ.mp3
-vocab-bengali-শিকার.mp3
-vocab-bengali-অপেক্ষার.mp3
-vocab-bengali-জেগে উঠতে.mp3
-vocab-bengali-পদব্রজে ভ্রমণ.mp3
-vocab-bengali-প্রাচীর.mp3
-vocab-bengali-ধুতে.mp3
-vocab-bengali-দুর্বল.mp3
-vocab-bengali-চাবুক.mp3
-vocab-bengali-জেতার জন্য.mp3
-vocab-bengali-গরূৎ.mp3
-vocab-bengali-শীতকালীন.mp3
-vocab-bengali-কাজ করতে.mp3
-vocab-bengali-কীট.mp3
-vocab-bengali-লিখতে.mp3
+একা.mp3
+কোণ.mp3
+কামরা.mp3
+এপ্রিল.mp3
+NA.mp3
+সেনা.mp3
+জিজ্ঞাসা করা.mp3
+থলে.mp3
+মদের দোকান.mp3
+সর্বনাশ.mp3
+গরুর মাংস.mp3
+বাঁকানো.mp3
+বেরি.mp3
+পান করা.mp3
+বিল.mp3
+বুট.mp3
+পটভূমি.mp3
+বক্স.mp3
+ব্রেক.mp3
+ব্রেকফাস্ট.mp3
+ইট.mp3
+বাদামী.mp3
+ব্রাশ.mp3
+বিল্ড.mp3
+ভবন.mp3
+ক্রয়.mp3
+পিষ্টক.mp3
+শিবির.mp3
+গাড়ী.mp3
+কার্ড.mp3
+বহন করা.mp3
+কার্ট.mp3
+মুরগির মাংস.mp3
+থুতনি.mp3
+গির্জা.mp3
+পরিস্কার করতে.mp3
+ক্লাব.mp3
+কম্পিউটার.mp3
+ব্যঞ্জনবর্ণ.mp3
+রান্না করতে.mp3
+তামা.mp3
+গাভী.mp3
+পরদা.mp3
+নাচতে.mp3
+মরণ.mp3
+মরতে.mp3
+খনন করা.mp3
+ডিনার.mp3
+অভিমুখ.mp3
+পান করতে.mp3
+ড্রাইভ.mp3
+ঝরা.mp3
+ড্রাগ.mp3
+ধূলিকণা.mp3
+প্রান্ত.mp3
+অব্যাহতি.mp3
+বিস্ফোরিত করা.mp3
+এ পর্যন্ত.mp3
+খামার.mp3
+পালক.mp3
+ফেব্রুয়ারি.mp3
+ভোজন.mp3
+অনুসন্ধান.mp3
+আঙ্গুল.mp3
+মাছি.mp3
+বন। জংগল.mp3
+কাঁটাচামচ.mp3
+চতুর্দশ.mp3
+ফ্রেম.mp3
+বিনামূল্যে.mp3
+সদর.mp3
+হাস্যকর.mp3
+পেট্রল.mp3
+কাচ.mp3
+দস্তানা.mp3
+সৃষ্টিকর্তা.mp3
+ভাল.mp3
+নানী.mp3
+স্থল.mp3
+হত্তয়া.mp3
+বন্দুক.mp3
+ফাঁসি দেত্তয়া.mp3
+টুপি.mp3
+তাপ.mp3
+জাহান্নাম.mp3
+হুক.mp3
+শিঙা.mp3
+মানবীয়.mp3
+চিত্র.mp3
+ইঞ্চি.mp3
+ভিতরে.mp3
+মণি.mp3
+রস.mp3
+লাফ দিতে.mp3
+কেতলি.mp3
+কিলোগ্রাম.mp3
+ছুরি.mp3
+ল্যাপটপ.mp3
+হাসি থেকে.mp3
+অ্যাটর্নি.mp3
+গাছের পাতা.mp3
+উত্তোলন করতে.mp3
+লাইন.mp3
+হারান.mp3
+নিখোঁজ.mp3
+অট্ট.mp3
+ভালবাসতে.mp3
+কম.mp3
+ভাগ্যবান.mp3
+মধ্যাহ্নভোজ.mp3
+মার্চ.mp3
+বিবাহ করা.mp3
+মে.mp3
+মানে.mp3
+দ্রবীভূত করা.mp3
+মিটার.mp3
+মিশ্রণ.mp3
+পর্বত.mp3
+মাউস.mp3
+সিনেমা.mp3
+পেশী.mp3
+স্নায়ু.mp3
+অন্তর্জাল.mp3
+বিঃদ্রঃ.mp3
+দপ্তর.mp3
+পৃষ্ঠা.mp3
+অতিক্রম করতে.mp3
+রোগী.mp3
+প্যাটার্ন.mp3
+পরিশোধ করতে.mp3
+ফটোগ্রাফি.mp3
+টুকরা.mp3
+পিন.mp3
+গোলাপী.mp3
+প্লাস্টিক.mp3
+প্লেট.mp3
+দরিদ্র.mp3
+শুয়োরের মাংস.mp3
+প্রার্থনা করা.mp3
+যাজক.mp3
+টান.mp3
+রেডিও.mp3
+প্রাপ্তি.mp3
+মনে রাখা.mp3
+রেঁস্তোরা.mp3
+সমৃদ্ধ.mp3
+চালান.mp3
+দু: খিত.mp3
+বলতে.mp3
+বিজ্ঞান.mp3
+স্ক্রু.mp3
+মৌসম.mp3
+বিক্রয়.mp3
+লিঙ্গ.mp3
+মেষ.mp3
+অংস.mp3
+Sing.mp3
+ধীর.mp3
+গন্ধ.mp3
+জীবনযাপন করা.mp3
+দাগ.mp3
+ছাপ.mp3
+লাঠি.mp3
+স্টপ.mp3
+সন্তরণ.mp3
+গ্রহণ করতে.mp3
+স্বাদ.mp3
+শেখান.mp3
+টীম.mp3
+টিয়ার.mp3
+টেলিফোন.mp3
+মনে.mp3
+তের.mp3
+অঙ্গুষ্ঠ.mp3
+পাগড়ি.mp3
+পদাঙ্গুলি.mp3
+একসঙ্গে.mp3
+টুল.mp3
+শীর্ষ.mp3
+স্পর্শ করতে.mp3
+রেল ষ্টেশন.mp3
+পরিবহন.mp3
+ট্রে.mp3
+চালু.mp3
+বার.mp3
+অরুপ.mp3
+শিকার.mp3
+অপেক্ষার.mp3
+জেগে উঠতে.mp3
+পদব্রজে ভ্রমণ.mp3
+প্রাচীর.mp3
+ধুতে.mp3
+দুর্বল.mp3
+চাবুক.mp3
+জেতার জন্য.mp3
+গরূৎ.mp3
+শীতকালীন.mp3
+কাজ করতে.mp3
+কীট.mp3
+লিখতে.mp3

@@ -1,4 +1,1 @@
-vocab-chinese-NA.mp3
-vocab-chinese-最后.mp3
-vocab-chinese-湿.mp3
-vocab-chinese-写.mp3
+NA.mp3
